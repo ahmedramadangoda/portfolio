@@ -1,0 +1,52 @@
+// helper folder
+@import 'sass/helper/variables';
+@import 'sass/helper/mixin';
+
+// components folder
+@import 'sass/component/brands-icons&h2';
+@import 'sass/component/button-up-down';
+
+// pages folder
+@import 'sass/pages/landing';
+@import 'sass/pages/about';
+@import 'sass/pages/skills';
+@import 'sass/pages/projects';
+
+// layout folder
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+
+body{
+    background-color: $background-color !important;
+}
+*{
+    transition: all .3s linear !important; 
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        max-width: 960px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container {
+        max-width: 720px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container {
+        max-width: 540px !important;
+    }
+}
+
+ul{
+    @include reset-ul;
+}
+a{
+    @include reset-a-link;
+}

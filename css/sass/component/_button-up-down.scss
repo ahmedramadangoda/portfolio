@@ -1,0 +1,26 @@
+/* start right button scrolling in page */
+.btn-up{
+    position: fixed;
+    bottom: 15px;
+    right: -15px;
+    padding: 0px;
+    z-index: 300;
+    color: white;
+    display: none;
+    cursor: pointer;
+    animation-name: button-move;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    opacity: 1;
+}
+@keyframes button-move {
+    0%{
+        right: -70px;
+    }
+    50%{
+        right: 20px;    
+    }
+}
+/* End right button scrolling in page */

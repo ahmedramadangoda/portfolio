@@ -1,0 +1,31 @@
+.about{
+    .container{
+        .row{
+            .about-text{
+                & > p{
+                    color: $text-color !important;
+                    font-size: 25px !important;
+                    font-weight: 700;
+                }
+                ul{
+                    li{
+                        p{
+                            color: $text-color;
+                            font-size: 22px !important;
+                            font-weight: 500 !important;
+                            margin-bottom: -15px !important;
+                        }
+                    }
+                }
+            }
+            .about-img{
+                .lord-icon{
+                    @include mobileScreen{
+                        width:350px !important;
+                        height: 350px !important;
+                    }
+                }
+            }
+        }
+    }
+}

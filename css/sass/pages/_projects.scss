@@ -1,0 +1,51 @@
+.project{
+    .swicher-project{
+        li{
+            cursor: pointer;
+            background-color: #00595cb5;
+            border-radius: 15px;
+            color: rgb(189, 189, 189);
+            font-weight: 500;
+            width: fit-content;
+        }
+        .active-pro{
+            background-color: #1a7f9e;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 3px white;
+        }
+    }
+    .boxes{
+        // row-gap: 85px !important;
+        .big-box{
+            width: 300px;
+            height: 280px;
+            overflow: hidden;
+            .img-box{
+                border: 3px solid $text-color;
+                padding: 0;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                border-radius: 10px;
+                img{
+                    height: 100%;
+                }
+                a{
+                    position: relative;
+                    top: 0px;
+                    z-index: 12;
+                }
+                &:hover img{
+                    transform: scale(1.2 , 1.2);
+                    opacity: .3;
+                }
+                &:hover a{
+                    top: -200px !important;
+                }
+            }
+        }
+    }
+}
+
